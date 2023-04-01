@@ -21,6 +21,15 @@ class ArticleController extends AbstractController
      */
     public function show($slug): Response
     {
-        return new Response(sprintf("Test page: %s", $slug));
+        $comments = [
+            "test 1",
+            "test 2",
+            "test 3"
+        ];
+
+        return $this->render('article/show.html.twig', [
+            'title' => ucwords(str_replace("-", " ", $slug)),
+            'comments' => $comments
+        ]);
     }
 }
