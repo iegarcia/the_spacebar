@@ -40,6 +40,9 @@
             "./migrations/.gitignore"
         ]
     },
+    "knplabs/knp-markdown-bundle": {
+        "version": "1.9.0"
+    },
     "phpunit/phpunit": {
         "version": "8.5",
         "recipe": {
